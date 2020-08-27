@@ -41,7 +41,7 @@
 
 <meta property="og:title" content="Sample size or precision for risk ratio — prec_riskratio" />
 <meta property="og:description" content="prec_riskratio returns the risk ratio and the sample size or the
-precision for the provided proportions" />
+precision for the provided proportions." />
 
 
 
@@ -73,7 +73,7 @@ precision for the provided proportions" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">presize</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2</span>
       </span>
     </div>
 
@@ -94,7 +94,7 @@ precision for the provided proportions" />
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="http://github.com/CTU-Bern/presize/">
+  <a href="https://github.com/CTU-Bern/presize/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -113,13 +113,13 @@ precision for the provided proportions" />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Sample size or precision for risk ratio</h1>
-    <small class="dont-index">Source: <a href='http://github.com/CTU-Bern/presize/blob/master/R/differences.R'><code>R/differences.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/CTU-Bern/presize/blob/master/R/differences.R'><code>R/differences.R</code></a></small>
     <div class="hidden name"><code>prec_riskratio.Rd</code></div>
     </div>
 
     <div class="ref-description">
     <p><code>prec_riskratio</code> returns the risk ratio and the sample size or the
-precision for the provided proportions</p>
+precision for the provided proportions.</p>
     </div>
 
     <pre class="usage"><span class='fu'>prec_riskratio</span>(
@@ -138,28 +138,28 @@ precision for the provided proportions</p>
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>p1</th>
-      <td><p>Risk among unexposed</p></td>
+      <td><p>risk among exposed.</p></td>
     </tr>
     <tr>
       <th>p2</th>
-      <td><p>Risk among exposed</p></td>
+      <td><p>risk among unexposed.</p></td>
     </tr>
     <tr>
       <th>n1</th>
-      <td><p>Number of patients in unexposed group</p></td>
+      <td><p>number of patients in exposed group.</p></td>
     </tr>
     <tr>
       <th>r</th>
       <td><p>allocation ratio (relative size of unexposed and exposed cohort
-(<code>n2</code> / <code>n1</code>))</p></td>
+(<code>n2</code> / <code>n1</code>)).</p></td>
     </tr>
     <tr>
       <th>conf.width</th>
-      <td><p>precision (the full width of the confidende interval)</p></td>
+      <td><p>precision (the full width of the confidence interval).</p></td>
     </tr>
     <tr>
       <th>conf.level</th>
-      <td><p>confidence level</p></td>
+      <td><p>confidence level.</p></td>
     </tr>
     <tr>
       <th>method</th>
@@ -168,13 +168,13 @@ Methods can be abbreviated.</p></td>
     </tr>
     <tr>
       <th>...</th>
-      <td><p>other arguments to uniroot (e.g. <code>tol</code>)</p></td>
+      <td><p>other arguments to uniroot (e.g. <code>tol</code>).</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Exactly one of the parameters <code>n1, conf.width</code> must be passed as NULL,
+    <p>Exactly one of the parameters <code>n1</code> or <code>conf.width</code> must be passed as NULL,
 and that parameter is determined from the other.</p>
 <p>Koopman (<code>koopman</code>) provides an asymptotic score confidence interval
 that is always consistent with Pearsons chi-squared test. It is the
@@ -191,9 +191,9 @@ method.</p>
 intervals for two independent binomial proportions</em>, Statistical methods in
 medical research 24(2):224-254.</p>
 <p>Katz D, Baptista J, Azen SP, and Pike MC (1978) <em>Obtaining Confidence
-Intervals for the Risk Ratio in Cohort Studies</em>, Biometrics 34:469-474</p>
+Intervals for the Risk Ratio in Cohort Studies</em>, Biometrics 34:469-474.</p>
 <p>Koopman PAR (1984) <em>Confidence Intervals for the Ratio of Two Binomial
-Proportions</em>, Biometrics 40:513-517</p>
+Proportions</em>, Biometrics 40:513-517.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># Validate function with example in Fagerland et al. (2015), Table 5.</span>

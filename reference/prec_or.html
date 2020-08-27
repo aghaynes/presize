@@ -41,7 +41,7 @@
 
 <meta property="og:title" content="Sample size or precision for an odds ratio — prec_or" />
 <meta property="og:description" content="prec_or returns the sample size or the precision for the
-provided proportions" />
+provided proportions." />
 
 
 
@@ -73,7 +73,7 @@ provided proportions" />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">presize</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2</span>
       </span>
     </div>
 
@@ -94,7 +94,7 @@ provided proportions" />
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="http://github.com/CTU-Bern/presize/">
+  <a href="https://github.com/CTU-Bern/presize/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -113,13 +113,13 @@ provided proportions" />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Sample size or precision for an odds ratio</h1>
-    <small class="dont-index">Source: <a href='http://github.com/CTU-Bern/presize/blob/master/R/differences.R'><code>R/differences.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/CTU-Bern/presize/blob/master/R/differences.R'><code>R/differences.R</code></a></small>
     <div class="hidden name"><code>prec_or.Rd</code></div>
     </div>
 
     <div class="ref-description">
     <p><code>prec_or</code> returns the sample size or the precision for the
-provided proportions</p>
+provided proportions.</p>
     </div>
 
     <pre class="usage"><span class='fu'>prec_or</span>(
@@ -138,37 +138,37 @@ provided proportions</p>
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>p1</th>
-      <td><p>Risk among unexposed</p></td>
+      <td><p>risk among exposed.</p></td>
     </tr>
     <tr>
       <th>p2</th>
-      <td><p>Risk among exposed</p></td>
+      <td><p>risk among unexposed.</p></td>
     </tr>
     <tr>
       <th>n1</th>
-      <td><p>Number of patients in unexposed group</p></td>
+      <td><p>number of patients in exposed group.</p></td>
     </tr>
     <tr>
       <th>r</th>
       <td><p>allocation ratio (relative size of unexposed and exposed cohort
-(<code>n2</code> / <code>n1</code>))</p></td>
+(<code>n2</code> / <code>n1</code>)).</p></td>
     </tr>
     <tr>
       <th>conf.width</th>
-      <td><p>precision (the full width of the confidende interval)</p></td>
+      <td><p>precision (the full width of the confidence interval).</p></td>
     </tr>
     <tr>
       <th>conf.level</th>
-      <td><p>confidence level</p></td>
+      <td><p>confidence level.</p></td>
     </tr>
     <tr>
       <th>method</th>
       <td><p>Exactly one of <code>indip_smooth</code> (<em>default</em>),
-<code>gart</code>, or <code>wolf</code>. Methods can be abbreviated.</p></td>
+<code>gart</code>, or <code>woolf</code>. Methods can be abbreviated.</p></td>
     </tr>
     <tr>
       <th>...</th>
-      <td><p>other arguments to uniroot (e.g. <code>tol</code>)</p></td>
+      <td><p>other arguments to uniroot (e.g. <code>tol</code>).</p></td>
     </tr>
     </table>
 
@@ -178,7 +178,7 @@ provided proportions</p>
   computed one) augmented with method and note elements.</p>
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Exactly one of the parameters <code>n, conf.width</code> must be passed as NULL,
+    <p>Exactly one of the parameters <code>n1</code> or <code>conf.width</code> must be passed as NULL,
 and that parameter is determined from the other.</p>
 <p>Woolf (<code>woolf</code>), Gart (<code>gart</code>), and Independence-smoothed logit
 (<code>indip_smooth</code>) belong to a general family of adjusted confidence
@@ -197,7 +197,7 @@ indip_smooth method.</p>
     <p>Fagerland MW, Lydersen S, Laake P (2015). <em>Recommended
 confidence intervals for two independent binomial proportions</em>. Statistical
 Methods in Medical Research, 24(2):224-254.
-<a href='https://doi.org/10.1177/0962280211415469'>doi:10.1177/0962280211415469</a></p>
+<a href='https://doi.org/10.1177/0962280211415469'>doi:10.1177/0962280211415469</a>.</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

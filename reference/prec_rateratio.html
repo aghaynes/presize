@@ -73,7 +73,7 @@ provided proportions." />
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">presize</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.2</span>
       </span>
     </div>
 
@@ -94,7 +94,7 @@ provided proportions." />
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="http://github.com/CTU-Bern/presize/">
+  <a href="https://github.com/CTU-Bern/presize/">
     <span class="fab fa fab fa-github fa-lg"></span>
      
   </a>
@@ -113,7 +113,7 @@ provided proportions." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Sample size or precision for a rate ratio</h1>
-    <small class="dont-index">Source: <a href='http://github.com/CTU-Bern/presize/blob/master/R/differences.R'><code>R/differences.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/CTU-Bern/presize/blob/master/R/differences.R'><code>R/differences.R</code></a></small>
     <div class="hidden name"><code>prec_rateratio.Rd</code></div>
     </div>
 
@@ -136,35 +136,35 @@ provided proportions.</p>
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>n1</th>
-      <td><p>number of exposed individuals</p></td>
+      <td><p>number of patients in exposed group.</p></td>
     </tr>
     <tr>
       <th>rate1</th>
-      <td><p>event rate in the exposed group</p></td>
+      <td><p>event rate in the exposed group.</p></td>
     </tr>
     <tr>
       <th>rate2</th>
-      <td><p>event rate in the unexposed group</p></td>
+      <td><p>event rate in the unexposed group.</p></td>
     </tr>
     <tr>
       <th>prec.level</th>
-      <td><p>the ratio of the upper limit to the lower limit of the
-rate ratio confidence interval</p></td>
+      <td><p>ratio of the upper limit over the lower limit of the
+rate ratio confidence interval.</p></td>
     </tr>
     <tr>
       <th>r</th>
       <td><p>allocation ratio (relative size of unexposed and exposed cohort
-(<code>n2</code> / <code>n1</code>))</p></td>
+(<code>n2</code> / <code>n1</code>)).</p></td>
     </tr>
     <tr>
       <th>conf.level</th>
-      <td><p>confidence level</p></td>
+      <td><p>confidence level.</p></td>
     </tr>
     </table>
 
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>Exactly one of the parameters <code>n1, conf.width</code> must be passed as
+    <p>Exactly one of the parameters  <code>n1</code> or <code>conf.width</code> must be passed as
 NULL, and that parameter is determined from the other. Event rates in the two
 groups should also be provided (<code>rate1, rate2</code>). If only
 <code>rate1</code> is provided, <code>rate2</code> is assumed to be 2 times
@@ -173,7 +173,7 @@ groups should also be provided (<code>rate1, rate2</code>). If only
 
     <p>Rothman KJ, Greenland S (2018). <em>Planning Study Size Based on
   Precision Rather Than Power</em>. Epidemiology, 29:599-603.
-  <a href='https://doi.org/10.1097/EDE.0000000000000876'>doi:10.1097/EDE.0000000000000876</a></p>
+  <a href='https://doi.org/10.1097/EDE.0000000000000876'>doi:10.1097/EDE.0000000000000876</a>.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='fu'>prec_rateratio</span>(<span class='fl'>20</span>, <span class='fl'>.5</span>, <span class='fl'>3</span>)</div><div class='output co'>#&gt; 
