@@ -291,7 +291,8 @@ would be the proportion of positive or negative tests in the non-diseased group.
 #&gt;   prev  p1   p2        n       n1       n2       lr      lwr      upr
 #&gt; 1  0.5 0.8 0.27 172.0183 86.00915 86.00915 2.962963 2.060562 4.260562
 #&gt;   conf.width conf.level
-#&gt; 1        2.2       0.95</div><div class='input'><span class='fu'>prec_pos_lr</span><span class='op'>(</span>prev <span class='op'>=</span> <span class='fl'>.5</span>, sens <span class='op'>=</span> <span class='fl'>.8</span>, spec <span class='op'>=</span> <span class='fl'>.73</span>, conf.width <span class='op'>=</span> <span class='fl'>2.2</span><span class='op'>)</span>
+#&gt; 1        2.2       0.95</div><div class='input'><span class='co'># same, but using the wrapper to specify sens and spec</span>
+<span class='fu'>prec_pos_lr</span><span class='op'>(</span>prev <span class='op'>=</span> <span class='fl'>.5</span>, sens <span class='op'>=</span> <span class='fl'>.8</span>, spec <span class='op'>=</span> <span class='fl'>.73</span>, conf.width <span class='op'>=</span> <span class='fl'>2.2</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt;      sample size for positive likelihood ratio 
 #&gt; 
@@ -307,7 +308,8 @@ would be the proportion of positive or negative tests in the non-diseased group.
 #&gt;      precision for likelihood ratios 
 #&gt; 
 #&gt;   prev  p1  p2   n n1 n2  lr       lwr       upr conf.width conf.level
-#&gt; 1  0.5 0.1 0.5 160 80 80 0.2 0.1000195 0.3999219  0.2999024       0.95</div><div class='input'><span class='fu'>prec_neg_lr</span><span class='op'>(</span>prev <span class='op'>=</span> <span class='fl'>.5</span>, sens <span class='op'>=</span> <span class='fl'>.9</span>, spec <span class='op'>=</span> <span class='fl'>.5</span>, n <span class='op'>=</span> <span class='fl'>160</span><span class='op'>)</span>
+#&gt; 1  0.5 0.1 0.5 160 80 80 0.2 0.1000195 0.3999219  0.2999024       0.95</div><div class='input'><span class='co'># same, but using the wrapper to specify sens and spec</span>
+<span class='fu'>prec_neg_lr</span><span class='op'>(</span>prev <span class='op'>=</span> <span class='fl'>.5</span>, sens <span class='op'>=</span> <span class='fl'>.9</span>, spec <span class='op'>=</span> <span class='fl'>.5</span>, n <span class='op'>=</span> <span class='fl'>160</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt;      precision for negative likelihood ratio 
 #&gt; 
