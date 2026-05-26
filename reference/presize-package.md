@@ -11,24 +11,26 @@ the confidence interval), and vice versa.
 
 Useful links:
 
-  - <https://github.com/CTU-Bern/presize>
+- <https://github.com/dcr-unibe-ch/presize>
 
-  - <https://ctu-bern.github.io/presize/>
+- <https://dcr-unibe-ch.github.io/presize/>
 
-  - Report bugs at <https://github.com/CTU-Bern/presize/issues>
+- Report bugs at <https://github.com/dcr-unibe-ch/presize/issues>
 
 ## Author
 
-**Maintainer**: Alan G. Haynes <alan.haynes@ctu.unibe.ch>
+**Maintainer**: Alan G. Haynes <alan.haynes@unibe.ch>
 
 Authors:
 
-  - Armando Lenz <armando.lenz@ctu.unibe.ch>
+- Alan G. Haynes <alan.haynes@unibe.ch>
 
-  - Andreas Limacher <andreas.limacher@ctu.unibe.ch>
+- Armando Lenz
+
+- Andreas Limacher <andreas.limacher@paraplegie.ch>
 
 Other contributors:
 
-  - Odile Stalder <odile.stalder@ctu.unibe.ch> \[contributor\]
+- Odile Stalder <odile.stalder@unibe.ch> \[contributor\]
 
-  - Marie Roumet <marie.roumet@ctu.unibe.ch> \[contributor\]
+- Marie Roumet <marie.roumet@unibe.ch> \[contributor\]
